@@ -53,7 +53,6 @@ def step_subscribed_sms(context):
     context.notifier = CustomerNotifier("sms")
     context.order.attach(context.notifier)
 
-
 # ============== WHEN (Когда) ==============
 
 @when('я заказываю "{coffee_type}"')
